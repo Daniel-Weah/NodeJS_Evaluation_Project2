@@ -6,9 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-.header{
-    background-color: gainsboro;
-}
+
 
 #logo{
     width: 60px;
@@ -19,26 +17,40 @@ html{
     margin-left: 2pc;
 }
 
-#navbar ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
 }
-#navbar ul li{
-    list-style-type: none;
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 4px;
 }
-#navbar ul li a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-inline: -10pc;
-    color: #000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: all 0.5s ease-in-out;
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
 }
-#navbar ul li a:hover{
-    color: orangered;
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
 }
 
 .details{
@@ -75,17 +87,28 @@ html{
 
 .card-container{
     display: flex;
+    margin: 0 -10px;
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
 }
-.card img{
-    width: 50%;
-    height: auto;
-    margin-left: 5pc;
+.card i{
+    font-size: 50px;
+    text-align: center;
+    padding-left: 10pc;
+    padding-bottom: 5px;
 }
 .card{
-    margin-inline: 10px;}
+    border: 1px solid #ccc;
+    margin: 0 auto;
+  max-width: 800px;
+  margin-inline: 10px;
+  padding-top: 2pc;
+  padding-bottom: 2pc;
+  background-color: lightblue;
+  color: #000000;
+  border-radius: 10px;
+}
 .card h2{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
